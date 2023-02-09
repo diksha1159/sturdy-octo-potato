@@ -52,3 +52,7 @@ python eye_controlled_mouse.py
 ```
 
 The code will start running and open a window showing the video from your webcam. The video will be processed to detect facial landmarks, and the mouse pointer will be controlled based on the position of your eyes. If the code detects that you're closing your left eye, it will simulate a mouse click.
+
+#### Terminating the program
+
+To stop the code, you can press the "q" key in the "Eye Controlled Mouse" window. The code uses the cv2.waitKey(1) function, which waits for a keyboard event. If the value returned by cv2.waitKey(1) is equal to ord("q"), the code breaks out of the while loop and stops executing. 
