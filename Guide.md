@@ -56,3 +56,26 @@ The code will start running and open a window showing the video from your webcam
 #### Terminating the program
 
 To stop the code, you can press the "q" key in the "Eye Controlled Mouse" window. The code uses the cv2.waitKey(1) function, which waits for a keyboard event. If the value returned by cv2.waitKey(1) is equal to ord("q"), the code breaks out of the while loop and stops executing. 
+
+---
+
+#### Testing
+
+Generating unit tests for this code would require a comprehensive testing framework that can simulate a camera feed, face detection and landmark detection, mouse movements and clicks.
+
+I have used this as an example of a basic unit test using the unittest framework in Python stpred in the testing-scripts.md file
+This code creates two test cases, one to test mouse movement and another to test mouse clicks.
+Note: this is just a basic example and you may need to add more tests and assertions depending on your specific requirements but for me, this works just fine.
+
+now to execute this testing script code:
+To use the testing script code, you will need to have Python 3 installed along with the OpenCV, MediaPipe, and PyAutoGUI libraries. You will also need a webcam connected to your computer.
+
+Here are the steps to run the testing script code:
+
+-Open a text editor and paste the code.
+-Save the file with a .py extension (e.g. "eye_controlled_mouse.py")
+-Open a terminal or command prompt window and navigate to the directory where you saved the file.
+-Run the code by typing "python eye_controlled_mouse.py" in the terminal and press Enter.
+-A window will pop up displaying the webcam feed. The code will track the landmarks on the face and use the position of the eyes to control the mouse.
+-To stop the code, you can simply press the "q" key in the webcam window or close the window.
+
