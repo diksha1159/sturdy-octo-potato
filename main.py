@@ -12,8 +12,8 @@ def find_landmarks_and_click(landmarks, frame_w, frame_h):
         y = int(landmark.y * frame_h)
         cv2.circle(frame, (x, y), 3, (0, 255, 0))
         if id == 1:
-            screen_x = screen_w * landmark.x
-            screen_y = screen_h * landmark.y
+            screen_x = int(screen_w * landmark.x)
+            screen_y = int(screen_h * landmark.y)
             pyautogui.moveTo(screen_x, screen_y)
     left = [landmarks[145], landmarks[159]]
     for landmark in left:
